@@ -40,12 +40,12 @@ $("#add-train-btn").on("click", function(event){
 
 	// Clears all of the text-boxes
 	$("#train-name-input").val("");
-    $("#destination-input").val("");
-    $("#first-train-input").val("");
-    $("#frequency-input").val("");
+  $("#destination-input").val("");
+  $("#first-train-input").val("");
+  $("#frequency-input").val("");
 
-    // Prevents moving to a new page
-    return false;
+  // Prevents moving to a new page
+  return false;
 
 });
 
