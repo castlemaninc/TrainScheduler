@@ -31,7 +31,7 @@
 		  		<div class="panel-heading">Current Train Schedule</div>
 				<div class="panel-body"></div>
 					<!-- Table -->
-					<table class="table table-hover">
+					<table class="table table-hover" id="train-table">
 				    <thead>
 				      <tr>
 				        <th>Train Name</th>
@@ -41,42 +41,7 @@
 				        <th>Minutes Away</th>
 				      </tr>
 				    </thead>
-				    <tbody>
-				      <tr>
-				        <td>Trenton Express</td>
-				        <td>Trenton</td>
-				        <td>25</td>
-				        <td>05:35 PM</td>
-				        <td>10</td>
-				      </tr>
-				      <tr>
-				        <td>Trenton Express</td>
-				        <td>Trenton</td>
-				        <td>25</td>
-				        <td>05:35 PM</td>
-				        <td>10</td>
-				      </tr>
-				      <tr>
-				        <td>Trenton Express</td>
-				        <td>Trenton</td>
-				        <td>25</td>
-				        <td>05:35 PM</td>
-				        <td>10</td>
-				      </tr>
-				      <tr>
-				        <td>Trenton Express</td>
-				        <td>Trenton</td>
-				        <td>25</td>
-				        <td>05:35 PM</td>
-				        <td>10</td>
-				      </tr>
-				      <tr>
-				        <td>Trenton Express</td>
-				        <td>Trenton</td>
-				        <td>25</td>
-				        <td>05:35 PM</td>
-				        <td>10</td>
-				      </tr>
+				    <tbody>				      			     
 				    </tbody>
 				  </table>
 				</div>
@@ -94,22 +59,22 @@
     			<div class="panel-body">
     				<form class="col-md-12 addTrainForm">
 					  <div class="form-group">
-					    <label for="formGroupExampleInput" class="addTrainLabels">Train Name</label>
-					    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+					    <label for="train-name-input" class="addTrainLabels">Train Name</label>
+					    <input type="text" class="form-control" id="train-name-input" placeholder="">
 					  </div>
 					  <div class="form-group">
-					    <label for="formGroupExampleInput2" class="addTrainLabels">Destination</label>
-					    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+					    <label for="destination-input" class="addTrainLabels">Destination</label>
+					    <input type="text" class="form-control" id="destination-input" placeholder="">
 					  </div>
 					  <div class="form-group">
-					    <label for="formGroupExampleInput" class="addTrainLabels">First Train Time (HH:mm - military time)</label>
-					    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+					    <label for="first-train-input" class="addTrainLabels">First Train Time (HH:mm - military time)</label>
+					    <input type="text" class="form-control" id="first-train-input" placeholder="">
 					  </div>
 					  <div class="form-group">
-					    <label for="formGroupExampleInput2" class="addTrainLabels">Frequency (min)</label>
-					    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+					    <label for="frequency-input2" class="addTrainLabels">Frequency (min)</label>
+					    <input type="text" class="form-control" id="frequency-input" placeholder="">
 					  </div>
-					  <button type="submit" class="btn btn-orange">Submit</button>
+					  <button type="submit" class="btn btn-orange" id="add-train-btn">Submit</button>
 					</form>
     			</div>
     		</div>
@@ -123,9 +88,11 @@
     <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
 	
+	<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
 	<script src="assets/javascript/app.js"></script>
   </body>
 
